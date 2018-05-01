@@ -11,8 +11,8 @@ const brotli = require('brotli');
         './dist/cv/main.js',
     ];
 
-    await fs.ensureDir('elements');
-    await concat(files, 'elements/my-app.js');
-    fs.writeFile('elements/my-app.js.br', brotli.compress(fs.readFileSync('elements/my-app.js')));
+    await fs.ensureDir('docs/elements');
+    await concat(files, 'docs/elements/my-app.js');
+    fs.writeFile('docs/elements/my-app.js.br', brotli.compress(fs.readFileSync('docs/elements/my-app.js')));
 
 })();

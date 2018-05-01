@@ -1,0 +1,9 @@
+{
+  "$schema": "../node_modules/@angular-devkit/schematics/collection-schema.json",
+  "schematics": {
+    "angular-component": {
+      "description": "Convert your fresh @angular/cli app to a web component.",
+      "factory": "./angular-component/index#angularComponent"
+    }
+  }
+}
